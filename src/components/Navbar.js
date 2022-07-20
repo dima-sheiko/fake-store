@@ -39,9 +39,9 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1350px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 35px;
 `;
 
 const Title = styled.h1`
@@ -56,7 +56,7 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  font-size: 25px;
+  font-size: 24px;
 `;
 
 const NavbarLink = styled(NavLink)`
