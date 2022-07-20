@@ -7,6 +7,7 @@ import About from './components/About';
 import Cart from './components/Cart';
 import './styles/style.css';
 import './styles/normalize.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='about' element={<About />} />
         <Route path='shopping-cart' element={<Cart />} />
       </Routes>
+      <Footer></Footer>
     </>
   );
 }
