@@ -5,9 +5,10 @@ import Home from './components/Home';
 import Shop from './components/Shop';
 import About from './components/About';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 import './styles/style.css';
 import './styles/normalize.css';
-import Footer from './components/Footer';
+
 
 function App() {
   return (
