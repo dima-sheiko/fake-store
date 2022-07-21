@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import bag from '../assets/bag.svg';
+import bag from '../assets/icons/bag.svg';
 
 function Navbar() {
   return (
