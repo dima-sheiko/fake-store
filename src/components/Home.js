@@ -31,7 +31,7 @@ export default Home;
 const Main = styled.main`
   max-width: 1320px;
   margin: 0 auto;
-  padding: 35px;
+  padding: 40px;
 `;
 
 const HomeWrapper = styled.div`
