@@ -48,7 +48,6 @@ const Title = styled.h1`
   margin: 0;
   font-size: 60px;
   color: #46ffd3;
-  transition: 0.5s;
 `;
 
 const Nav = styled.nav`
