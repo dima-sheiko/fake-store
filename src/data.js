@@ -37,6 +37,24 @@ const data = {
       price: 7.95,
       image: 'https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg',
     },
+    {
+      id: 7,
+      title: 'Women T Shirt',
+      price: 12.99,
+      image: 'https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg',
+    },
+    {
+      id: 8,
+      title: 'Women Short Sleeve',
+      price: 9.85,
+      image: 'https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg',
+    },
+    {
+      id: 9,
+      title: 'Leather Moto Biker Jacket',
+      price: 29.95,
+      image: 'https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg',
+    },
   ],
 };
 
