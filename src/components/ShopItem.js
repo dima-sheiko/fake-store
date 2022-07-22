@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function ShopItem({ product }) {
+function ShopItem({ product, onAdd }) {
   return (
     <Item>
       <ImageWrapper>
-        <ItemImage src={product.image} alt='product image' />
+        <ItemImage src={product.image} alt={product.title} />
       </ImageWrapper>
       <DescriptionWrapper>
         <ItemName>{product.title}</ItemName>
         <ItemPrice>${product.price}</ItemPrice>
-        <AddBtn>Add To Cart</AddBtn>
+        <AddBtn onClick={() => onAdd(product)}>Add To Cart</AddBtn>
       </DescriptionWrapper>
     </Item>
   );

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import data from '../data';
 import ShopItem from './ShopItem';
 
-function Shop() {
+function Shop({ onAdd }) {
   const { products } = data;
 
   return (
     <Main>
       <ItemsWrapper>
         {products.map((product) => (
-          <ShopItem key={product.id} product={product}></ShopItem>
+          <ShopItem key={product.id} product={product} onAdd={onAdd}></ShopItem>
         ))}
       </ItemsWrapper>
     </Main>
