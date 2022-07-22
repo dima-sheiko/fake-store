@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { CartContext } from '../App';
 import bag from '../assets/icons/bag.svg';
 
 function Navbar() {
+  const cart = useContext(CartContext);
+
   return (
     <Header>
       <HeaderWrapper>
@@ -16,7 +19,7 @@ function Navbar() {
           <NavbarLink to='/about'>About</NavbarLink>
           <NavbarLink to='/shopping-cart'>
             <CartWrapper>
-              <CartCount>0</CartCount>
+              {cart.length > 0 ? <CartCount>{cart.length}</CartCount> : ''}
               <CartIcon src={bag} alt='bag-icon' />
             </CartWrapper>
           </NavbarLink>
@@ -41,7 +44,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 35px;
+  padding: 40px;
 `;
 
 const Title = styled.h1`
