@@ -56,8 +56,11 @@ const HomeWrapper = styled.div`
   }
 
   @media (max-width: 1070px) {
-    flex-direction: column-reverse;
     margin-top: 0;
+  }
+
+  @media (max-width: 1024px) {
+    justify-content: center;
   }
 `;
 
@@ -71,13 +74,9 @@ const HomeBlock = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 1070px) {
+  @media (max-width: 1024px) {
     margin-top: 30px;
     gap: 20px;
-  }
-
-  @media (max-width: 585px) {
-    width: 100%;
   }
 `;
 
@@ -90,14 +89,6 @@ const HomeTitle = styled.div`
   @media (max-width: 1400px) {
     font-size: 20px;
     margin-bottom: 0px;
-  }
-  
-  @media (max-width: 585px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 375px) {
-    font-size: 14px;
   }
 `;
 
@@ -116,14 +107,6 @@ const HomeSubtitle = styled.div`
 
   @media (max-width: 585px) {
     font-size: 30px;
-  }
-
-  @media (max-width: 393px) {
-    font-size: 22px;
-  }
-
-  @media (max-width: 375px) {
-    font-size: 16px;
   }
 `;
 
@@ -161,11 +144,6 @@ const HomeButton = styled.button`
     font-size: 25px;
     width: 250px;
   }
-
-  @media (max-width: 375px) {
-    font-size: 14px;
-    width: 150px;
-  }
 `;
 
 const HomeImage = styled.img`
@@ -176,11 +154,14 @@ const HomeImage = styled.img`
     width: 550px;
   }
 
-  @media (max-width: 585px) {
-    width: 350px;
+  @media (max-width: 1024px) {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.4;
   }
 
-  @media (max-width: 375px) {
-    width: 320px;
+  @media (max-width: 600px) {
+    top: 110px;
   }
 `;
