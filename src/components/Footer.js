@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer>
-      {location.pathname === '/shop' || location.pathname === '/cart' ? '' : (
+      {location.pathname === '/shop' || location.pathname === '/cart' ? null : (
         <FooterImage src={background} alt='footer image' />
       )}
     </footer>
