@@ -39,17 +39,6 @@ const HomeWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
-  animation: fadeIn 2s;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
 
   @media (max-width: 1400px) {
     justify-content: center;
@@ -69,6 +58,17 @@ const HomeBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 500px;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   @media (max-width: 1070px) {
     align-items: center;
@@ -149,6 +149,17 @@ const HomeButton = styled.button`
 const HomeImage = styled.img`
   border-radius: 50px;
   width: 700px;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   @media (max-width: 1400px) {
     width: 550px;
@@ -159,6 +170,7 @@ const HomeImage = styled.img`
     z-index: -1;
     width: 100%;
     opacity: 0.4;
+    animation: none;
   }
 
   @media (max-width: 600px) {
