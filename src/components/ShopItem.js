@@ -33,6 +33,10 @@ const ImageWrapper = styled.div`
   height: 190px;
   padding: 10px;
   margin: 0 auto;
+
+  @media (max-width: 375px) {
+    height: 170px;
+  }
 `;
 
 const ItemImage = styled.img`
@@ -72,5 +76,10 @@ const AddBtn = styled.button`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 375px) {
+    padding: 13px;
+    font-size: 16px;
   }
 `;

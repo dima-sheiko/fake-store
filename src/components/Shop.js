@@ -43,4 +43,14 @@ const ItemsWrapper = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 1194px) {
+    justify-content: center;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  @media (max-width: 683px) {
+    justify-content: center;
+    grid-template-columns: repeat(1, 250px);
+  }
 `;

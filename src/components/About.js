@@ -51,11 +51,35 @@ const AboutWrapper = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 749px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 597px) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 40px;
+  }
 `;
 
 const Icons = styled.div`
   display: flex;
   gap: 80px;
+
+  @media (max-width: 749px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 597px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 375px) {
+    gap: 30px;
+  }
 `;
 
 const Icon = styled.img`
@@ -67,12 +91,26 @@ const Icon = styled.img`
     transform: scale(1.05);
     transition: 0.5s;
   }
+
+  @media (max-width: 749px) {
+    width: 80px;
+  }
+
+  @media (max-width: 597px) {
+    width: 60px;
+  }
 `;
 
 const Description = styled.div`
   font-size: 40px;
   font-weight: bold;
   text-align: center;
+
+  @media (max-width: 749px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 597px) {
+    font-size: 20px;
+  }
 `;
-
-
