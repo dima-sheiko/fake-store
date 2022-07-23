@@ -17,7 +17,7 @@ function Navbar() {
           <NavbarLink to='/'>Home</NavbarLink>
           <NavbarLink to='/shop'>Shop</NavbarLink>
           <NavbarLink to='/about'>About</NavbarLink>
-          <NavbarLink to='/shopping-cart'>
+          <NavbarLink to='/cart'>
             <CartWrapper>
               {cart.length > 0 ? <CartCount>{cart.length}</CartCount> : ''}
               <CartIcon src={bag} alt='bag-icon' />

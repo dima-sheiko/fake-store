@@ -48,7 +48,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='shop' element={<Shop onAdd={onAdd} />} />
           <Route path='about' element={<About />} />
-          <Route path='shopping-cart' element={<Cart onAdd={onAdd} onRemove={onRemove}/>} />
+          <Route path='cart' element={<Cart onAdd={onAdd} onRemove={onRemove}/>} />
         </Routes>
         <Footer></Footer>
       </CartContext.Provider>
