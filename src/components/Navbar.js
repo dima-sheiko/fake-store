@@ -55,6 +55,10 @@ const HeaderWrapper = styled.div`
     padding: 30px;
     gap: 20px;
   }
+
+  @media (max-width: 450px) {
+    padding: 20px;
+  }
 `;
 
 const Title = styled.h1`
