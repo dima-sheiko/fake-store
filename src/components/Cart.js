@@ -81,8 +81,16 @@ const EmptyWrapper = styled.div`
     }
   }
 
-  @media (max-width: 450px) {
-    margin-top: 80px;
+  @media (max-width: 749px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 597px) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 40px;
   }
 `;
 

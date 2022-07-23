@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import main from '../assets/main.jpeg';
+import main from '../assets/main.png';
 import underline from '../assets/underline.png';
 
 function Home() {
@@ -32,18 +32,13 @@ const Main = styled.main`
   max-width: 1320px;
   margin: 0 auto;
   padding: 40px;
-
-  @media (max-width: 1070px) {
-    padding: 20px;
-  }
 `;
 
 const HomeWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 120px;
+  margin-top: 40px;
   animation: fadeIn 2s;
 
   @keyframes fadeIn {
@@ -62,7 +57,7 @@ const HomeWrapper = styled.div`
 
   @media (max-width: 1070px) {
     flex-direction: column-reverse;
-    margin-top: 0px;
+    margin-top: 0;
   }
 `;
 
@@ -102,7 +97,7 @@ const HomeTitle = styled.div`
   }
 
   @media (max-width: 375px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
@@ -128,7 +123,7 @@ const HomeSubtitle = styled.div`
   }
 
   @media (max-width: 375px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
@@ -186,6 +181,6 @@ const HomeImage = styled.img`
   }
 
   @media (max-width: 375px) {
-    width: 240px;
+    width: 320px;
   }
 `;

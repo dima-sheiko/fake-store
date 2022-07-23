@@ -31,7 +31,7 @@ const ItemsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
   animation: fadeIn 2s;
 
   @keyframes fadeIn {
@@ -47,6 +47,10 @@ const ItemsWrapper = styled.div`
   @media (max-width: 1194px) {
     justify-content: center;
     grid-template-columns: repeat(2, 300px);
+  }
+
+  @media (max-width: 1070px) {
+    margin-top: 0;
   }
 
   @media (max-width: 683px) {
