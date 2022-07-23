@@ -73,6 +73,7 @@ const AddBtn = styled.button`
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 0.8;

@@ -154,6 +154,7 @@ const HomeButton = styled.button`
   width: 300px;
   border-radius: 50px;
   cursor: pointer;
+  border: none;
   transition: 0.5s;
 
   &:hover {

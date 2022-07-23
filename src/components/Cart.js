@@ -204,11 +204,13 @@ const Button = styled.button`
   padding: 5px 10px;
   border-radius: 10px;
   cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 0.8;
   }
 `;
+
 const ItemPrice = styled.div`
   font-size: 18px;
 `;
@@ -232,6 +234,7 @@ const CheckoutButton = styled.button`
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 0.8;
