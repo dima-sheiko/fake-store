@@ -10,10 +10,10 @@ function About() {
     <Main>
       <AboutWrapper>
         <Icons>
-          <Icon src={github} />
-          <Icon src={instagram} />
-          <Icon src={facebook} />
-          <Icon src={twitter} />
+          <Icon src={github} alt='github icon'/>
+          <Icon src={instagram} alt='instagram icon'/>
+          <Icon src={facebook} alt='facebook icon'/>
+          <Icon src={twitter} alt='twitter icon'/>
         </Icons>
         <Description>
           <p>FakeStore</p>

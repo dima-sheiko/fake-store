@@ -15,10 +15,10 @@ function Home() {
           </HomeSubtitle>
           <HomeDivider src={underline} alt='underline'/>
           <Link to='/shop'>
-            <HomeButton>Shop now</HomeButton>
+            <HomeButton name='shop'>Shop now</HomeButton>
           </Link>
         </HomeBlock>
-        <HomeImage src={main} />
+        <HomeImage src={main} alt='main image'/>
       </HomeWrapper>
     </Main>
   );

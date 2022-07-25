@@ -29,14 +29,14 @@ function Cart({ onAdd, onRemove }) {
             {cart.map((item) => (
               <CartItem key={item.id}>
                 <ItemImage>
-                  <Image src={item.image} />
+                  <Image src={item.image} alt='shop item'/>
                 </ItemImage>
                 <ItemDetails>
                   <ItemTitle>{item.title}</ItemTitle>
                   <ItemButtons>
-                    <Button onClick={() => onAdd(item)}>+</Button>
+                    <Button onClick={() => onAdd(item)} name='add'>+</Button>
                     {item.quantity}
-                    <Button onClick={() => onRemove(item)}>-</Button>
+                    <Button onClick={() => onRemove(item)} name='delete'>-</Button>
                   </ItemButtons>
                   <ItemPrice>${item.price}</ItemPrice>
                 </ItemDetails>
@@ -44,7 +44,7 @@ function Cart({ onAdd, onRemove }) {
             ))}
             <TotalPrice>Total: ${totalPrice}</TotalPrice>
           </ItemWrapper>
-          <CheckoutButton>Checkout</CheckoutButton>
+          <CheckoutButton name='checkout'>Checkout</CheckoutButton>
         </CartWrapper>
       </Main>
     );
