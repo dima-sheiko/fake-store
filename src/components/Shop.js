@@ -29,7 +29,8 @@ const Main = styled.main`
 
 const ItemsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
   gap: 40px;
   margin-top: 40px;
   animation: fadeIn 2s;
@@ -44,17 +45,7 @@ const ItemsWrapper = styled.div`
     }
   }
 
-  @media (max-width: 1194px) {
-    justify-content: center;
-    grid-template-columns: repeat(2, 300px);
-  }
-
   @media (max-width: 1070px) {
     margin-top: 0;
-  }
-
-  @media (max-width: 683px) {
-    justify-content: center;
-    grid-template-columns: repeat(1, 250px);
   }
 `;
