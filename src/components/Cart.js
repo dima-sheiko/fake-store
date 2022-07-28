@@ -114,7 +114,7 @@ const EmptyCartImage = styled.img`
 
 const CartWrapper = styled.div`
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,6 +129,10 @@ const CartWrapper = styled.div`
     to {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 1070px) {
+    margin-top: 0;
   }
 `;
 
