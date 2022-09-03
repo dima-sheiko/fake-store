@@ -19,7 +19,7 @@ function Navbar() {
           <NavbarLink to='/about'>About</NavbarLink>
           <NavbarLink to='/cart'>
             <CartWrapper>
-              {cart.length > 0 ? <CartCount>{cart.length}</CartCount> : ''}
+              {cart.length > 0 && <CartCount>{cart.length}</CartCount>}
               <CartIcon src={bag} alt='bag-icon' />
             </CartWrapper>
           </NavbarLink>
