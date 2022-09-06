@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Shop from './components/Shop';
-import About from './components/About';
-import Cart from './components/Cart';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Shop from './components/Shop/Shop';
+import About from './components/About/About';
+import Cart from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
 import './styles/style.css';
 import './styles/normalize.css';
 
