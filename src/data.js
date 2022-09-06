@@ -39,13 +39,13 @@ const data = {
     },
     {
       id: 7,
-      title: 'Women T Shirt',
+      title: 'Women T Shirt, Boots & Pants',
       price: 12.99,
       image: 'https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg',
     },
     {
       id: 8,
-      title: 'Women Short Sleeve',
+      title: 'White Women Short Sleeve',
       price: 9.85,
       image: 'https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg',
     },

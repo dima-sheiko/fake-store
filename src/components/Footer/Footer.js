@@ -1,7 +1,9 @@
 import React from 'react';
+import { FooterImage } from './Footer.styled';
 import { useLocation } from 'react-router-dom';
-import styled from 'styled-components';
-import background from '../assets/background-wave.png';
+import background from '../../assets/background-wave.png';
+
+/* Logic */
 
 function Footer() {
   const location = useLocation();
@@ -17,12 +19,6 @@ function Footer() {
 
 export default Footer;
 
-/* Styles */
 
-const FooterImage = styled.img`
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: -1;
-`;
+
+
