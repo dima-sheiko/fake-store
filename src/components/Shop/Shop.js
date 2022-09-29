@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Main, ItemsWrapper } from './Shop.styled';
-import data from '../../data';
 import ShopItem from '../ShopItem/ShopItem';
+import axios from 'axios';
 
 /* Logic */
 
 function Shop({ onAdd }) {
-  const { products } = data;
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get(
+        'https://fakestoreapi.com/products?limit=9'
+      );
+      setProducts(data);
+    };
+
+    fetchProducts();
+  }, []);
 
   return (
     <Main>
@@ -20,7 +31,3 @@ function Shop({ onAdd }) {
 }
 
 export default Shop;
-
-
-
-
