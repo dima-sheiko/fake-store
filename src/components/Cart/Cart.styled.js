@@ -107,14 +107,14 @@ export const ItemImage = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 150px;
+  width: 140px;
 
   @media (max-width: 526px) {
-    height: 120px;
+    width: 120px;
   }
 
   @media (max-width: 474px) {
-    height: 100px;
+    width: 100px;
   }
 `;
 
@@ -146,6 +146,7 @@ export const ItemDetails = styled.div`
 export const ItemTitle = styled.div`
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
 `;
 
 export const ItemButtons = styled.div`

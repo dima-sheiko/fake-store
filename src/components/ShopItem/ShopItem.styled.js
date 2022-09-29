@@ -20,7 +20,8 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ItemImage = styled.img`
-  height: 100%;
+  height: 150px;
+  width: 100%;
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -32,12 +33,19 @@ export const DescriptionWrapper = styled.div`
   margin-top: 25px;
   border-top: 1px solid #dad7cd;
   width: 100%;
+  height: 100%;
 `;
 
 export const ItemName = styled.p`
   margin-top: 15px;
   font-size: 23px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 `;
 
 export const ItemPrice = styled.p`
