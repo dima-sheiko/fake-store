@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {
   Main,
   EmptyWrapper,
@@ -18,19 +18,16 @@ import {
   TotalPrice,
   CheckoutButton,
 } from './Cart.styled';
-import { CartContext } from '../../App';
 import frown from '../../assets/icons/frown.svg';
 
 /* Logic */
 
-function Cart({ onAdd, onRemove }) {
-  const cart = useContext(CartContext);
-
-  const totalPrice = cart
+function Cart({ onAdd, onRemove, cartItems }) {
+  const totalPrice = cartItems
     .reduce((acc, el) => acc + el.price * el.quantity, 0)
     .toFixed(2);
 
-  if (cart.length === 0) {
+  if (cartItems.length === 0) {
     return (
       <Main>
         <EmptyWrapper>
@@ -46,7 +43,7 @@ function Cart({ onAdd, onRemove }) {
       <Main>
         <CartWrapper>
           <ItemWrapper>
-            {cart.map((item) => (
+            {cartItems.map((item) => (
               <CartItem key={item.id}>
                 <ItemImage>
                   <Image src={item.image} alt='shop item' />

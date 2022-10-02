@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {
   Header,
   HeaderWrapper,
@@ -10,14 +10,11 @@ import {
   CartIcon,
 } from './Navbar.styled';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../../App';
 import bag from '../../assets/icons/bag.svg';
 
 /* Logic */
 
-function Navbar() {
-  const cart = useContext(CartContext);
-
+function Navbar({ cartItems }) {
   return (
     <Header>
       <HeaderWrapper>
@@ -30,7 +27,9 @@ function Navbar() {
           <NavbarLink to='/about'>About</NavbarLink>
           <NavbarLink to='/cart'>
             <CartWrapper>
-              {cart.length > 0 && <CartCount>{cart.length}</CartCount>}
+              {cartItems.length > 0 && (
+                <CartCount>{cartItems.length}</CartCount>
+              )}
               <CartIcon src={bag} alt='bag-icon' />
             </CartWrapper>
           </NavbarLink>

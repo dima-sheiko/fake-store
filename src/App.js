@@ -9,8 +9,6 @@ import Footer from './components/Footer/Footer';
 import './styles/style.css';
 import './styles/normalize.css';
 
-export const CartContext = React.createContext();
-
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -42,16 +40,17 @@ function App() {
 
   return (
     <>
-      <CartContext.Provider value={cartItems}>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='shop' element={<Shop onAdd={onAdd} />} />
-          <Route path='about' element={<About />} />
-          <Route path='cart' element={<Cart onAdd={onAdd} onRemove={onRemove}/>} />
-        </Routes>
-        <Footer></Footer>
-      </CartContext.Provider>
+      <Navbar cartItems={cartItems}></Navbar>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='shop' element={<Shop onAdd={onAdd} />} />
+        <Route path='about' element={<About />} />
+        <Route
+          path='cart'
+          element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />}
+        />
+      </Routes>
+      <Footer></Footer>
     </>
   );
 }
