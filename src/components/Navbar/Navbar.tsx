@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Header,
   HeaderWrapper,
@@ -11,10 +10,17 @@ import {
 } from './Navbar.styled';
 import { Link } from 'react-router-dom';
 import bag from '../../assets/icons/bag.svg';
+import { CartItem } from '../../App';
 
-/* Logic */
+// Types 
 
-export const Navbar = ({ cartItems }) => {
+type NavbarProps = {
+  cartItems: CartItem[];
+};
+
+// Logic 
+
+export const Navbar = ({ cartItems }: NavbarProps) => {
   return (
     <Header>
       <HeaderWrapper>

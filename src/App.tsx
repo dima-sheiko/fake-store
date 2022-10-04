@@ -1,18 +1,26 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { Home } from './components/Home/Home';
-import { Shop } from './components/Shop/Shop';
+import { Product, Shop } from './components/Shop/Shop';
 import { About } from './components/About/About';
 import { Cart } from './components/Cart/Cart';
 import { Footer } from './components/Footer/Footer';
 import './styles/style.css';
 import './styles/normalize.css';
 
-export const App = () => {
-  const [cartItems, setCartItems] = useState([]);
+// Types
 
-  const onAdd = (product) => {
+export type CartItem = Product & { quantity: number };
+
+// Logic
+
+export const App = () => {
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+
+  // Handlers
+
+  const onAdd = (product: Product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist) {
       setCartItems(
@@ -25,16 +33,18 @@ export const App = () => {
     }
   };
 
-  const onRemove = (product) => {
+  const onRemove = (product: Product) => {
     const exist = cartItems.find((x) => x.id === product.id);
-    if (exist.quantity === 1) {
-      setCartItems(cartItems.filter((x) => x.id !== product.id));
-    } else {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, quantity: exist.quantity - 1 } : x
-        )
-      );
+    if (exist) {
+      if (exist.quantity === 1) {
+        setCartItems(cartItems.filter((x) => x.id !== product.id));
+      } else {
+        setCartItems(
+          cartItems.map((x) =>
+            x.id === product.id ? { ...exist, quantity: exist.quantity - 1 } : x
+          )
+        );
+      }
     }
   };
 

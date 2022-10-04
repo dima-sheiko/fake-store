@@ -28,3 +28,9 @@ export const ItemsWrapper = styled.div`
     margin-top: 0;
   }
 `;
+
+export const Error = styled.h2`
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+`

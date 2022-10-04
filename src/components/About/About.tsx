@@ -1,11 +1,10 @@
-import React from 'react';
 import { Main, AboutWrapper, Icons, Icon, Description } from './About.styled';
 import github from '../../assets/icons/github.svg';
 import instagram from '../../assets/icons/instagram.svg';
 import facebook from '../../assets/icons/facebook.svg';
 import twitter from '../../assets/icons/twitter.svg';
 
-/* Logic */
+// Logic 
 
 export const About = () => {
   return (

@@ -92,7 +92,7 @@ export const ItemWrapper = styled.div`
   border-radius: 10px;
 `;
 
-export const CartItem = styled.div`
+export const Item = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;

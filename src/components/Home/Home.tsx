@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Main,
   HomeWrapper,
@@ -13,7 +12,7 @@ import { Link } from 'react-router-dom';
 import main from '../../assets/main.png';
 import underline from '../../assets/underline.png';
 
-/* Logic */
+// Logic 
 
 export const Home = () => {
   return (

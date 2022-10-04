@@ -1,9 +1,8 @@
-import React from 'react';
 import { FooterImage } from './Footer.styled';
 import { useLocation } from 'react-router-dom';
 import background from '../../assets/background-wave.png';
 
-/* Logic */
+// Logic 
 
 export const Footer = () => {
   const location = useLocation();

@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Item,
   ImageWrapper,
@@ -8,10 +7,18 @@ import {
   ItemPrice,
   AddBtn,
 } from './ShopItem.styled';
+import { Product } from '../Shop/Shop';
 
-/* Logic */
+// Types 
 
-export const ShopItem = ({ product, onAdd }) => {
+type ShopItemProps = {
+  product: Product;
+  onAdd: (product: Product) => void;
+};
+
+// Logic 
+
+export const ShopItem = ({ product, onAdd }: ShopItemProps) => {
   return (
     <Item>
       <ImageWrapper>

@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Main,
   EmptyWrapper,
@@ -7,7 +6,7 @@ import {
   EmptyCartImage,
   CartWrapper,
   ItemWrapper,
-  CartItem,
+  Item,
   ItemImage,
   Image,
   ItemDetails,
@@ -19,10 +18,20 @@ import {
   CheckoutButton,
 } from './Cart.styled';
 import frown from '../../assets/icons/frown.svg';
+import { Product } from '../Shop/Shop';
+import { CartItem } from '../../App';
 
-/* Logic */
+// Types 
 
-export const Cart = ({ onAdd, onRemove, cartItems }) => {
+type CartProps = {
+  onAdd: (product: Product) => void;
+  onRemove: (product: Product) => void;
+  cartItems: CartItem[];
+};
+
+// Logic 
+
+export const Cart = ({ onAdd, onRemove, cartItems }: CartProps) => {
   const totalPrice = cartItems
     .reduce((acc, el) => acc + el.price * el.quantity, 0)
     .toFixed(2);
@@ -44,7 +53,7 @@ export const Cart = ({ onAdd, onRemove, cartItems }) => {
         <CartWrapper>
           <ItemWrapper>
             {cartItems.map((item) => (
-              <CartItem key={item.id}>
+              <Item key={item.id}>
                 <ItemImage>
                   <Image src={item.image} alt='shop item' />
                 </ItemImage>
@@ -61,7 +70,7 @@ export const Cart = ({ onAdd, onRemove, cartItems }) => {
                   </ItemButtons>
                   <ItemPrice>${item.price}</ItemPrice>
                 </ItemDetails>
-              </CartItem>
+              </Item>
             ))}
             <TotalPrice>Total: ${totalPrice}</TotalPrice>
           </ItemWrapper>
