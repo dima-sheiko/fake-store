@@ -14,7 +14,7 @@ import bag from '../../assets/icons/bag.svg';
 
 /* Logic */
 
-function Navbar({ cartItems }) {
+export const Navbar = ({ cartItems }) => {
   return (
     <Header>
       <HeaderWrapper>
@@ -37,6 +37,4 @@ function Navbar({ cartItems }) {
       </HeaderWrapper>
     </Header>
   );
-}
-
-export default Navbar;
+};

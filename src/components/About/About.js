@@ -7,7 +7,7 @@ import twitter from '../../assets/icons/twitter.svg';
 
 /* Logic */
 
-function About() {
+export const About = () => {
   return (
     <Main>
       <AboutWrapper>
@@ -24,6 +24,4 @@ function About() {
       </AboutWrapper>
     </Main>
   );
-}
-
-export default About;
+};

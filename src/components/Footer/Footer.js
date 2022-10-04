@@ -5,7 +5,7 @@ import background from '../../assets/background-wave.png';
 
 /* Logic */
 
-function Footer() {
+export const Footer = () => {
   const location = useLocation();
 
   return (
@@ -15,10 +15,4 @@ function Footer() {
       )}
     </footer>
   );
-}
-
-export default Footer;
-
-
-
-
+};

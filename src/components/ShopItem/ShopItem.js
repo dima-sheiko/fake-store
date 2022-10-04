@@ -11,7 +11,7 @@ import {
 
 /* Logic */
 
-function ShopItem({ product, onAdd }) {
+export const ShopItem = ({ product, onAdd }) => {
   return (
     <Item>
       <ImageWrapper>
@@ -26,6 +26,4 @@ function ShopItem({ product, onAdd }) {
       </DescriptionWrapper>
     </Item>
   );
-}
-
-export default ShopItem;
+};

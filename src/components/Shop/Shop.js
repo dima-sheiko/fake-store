@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Main, ItemsWrapper } from './Shop.styled';
-import ShopItem from '../ShopItem/ShopItem';
+import { ShopItem } from '../ShopItem/ShopItem';
 import axios from 'axios';
 
 /* Logic */
 
-function Shop({ onAdd }) {
+export const Shop = ({ onAdd }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -28,6 +28,4 @@ function Shop({ onAdd }) {
       </ItemsWrapper>
     </Main>
   );
-}
-
-export default Shop;
+};

@@ -15,7 +15,7 @@ import underline from '../../assets/underline.png';
 
 /* Logic */
 
-function Home() {
+export const Home = () => {
   return (
     <Main>
       <HomeWrapper>
@@ -33,6 +33,4 @@ function Home() {
       </HomeWrapper>
     </Main>
   );
-}
-
-export default Home;
+};

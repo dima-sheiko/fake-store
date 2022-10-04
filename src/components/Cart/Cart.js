@@ -22,7 +22,7 @@ import frown from '../../assets/icons/frown.svg';
 
 /* Logic */
 
-function Cart({ onAdd, onRemove, cartItems }) {
+export const Cart = ({ onAdd, onRemove, cartItems }) => {
   const totalPrice = cartItems
     .reduce((acc, el) => acc + el.price * el.quantity, 0)
     .toFixed(2);
@@ -70,6 +70,4 @@ function Cart({ onAdd, onRemove, cartItems }) {
       </Main>
     );
   }
-}
-
-export default Cart;
+};
