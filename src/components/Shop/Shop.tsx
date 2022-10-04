@@ -22,6 +22,8 @@ export const Shop = ({ onAdd }: ShopProps) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [error, setError] = useState<boolean>(false);
 
+  // Effect
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
