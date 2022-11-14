@@ -1,4 +1,4 @@
-# shopping-cart
+# FakeStore
 
 Fake online store built with React, TypeScript, Router, Styled Components and FakeStore API.
 
