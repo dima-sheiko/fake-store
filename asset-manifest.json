@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/shopping-cart-ts/static/css/main.624b3605.css",
-    "main.js": "/shopping-cart-ts/static/js/main.6e648e7a.js",
-    "static/media/main.png": "/shopping-cart-ts/static/media/main.bd89f8b360e58987fee2.png",
-    "static/media/background-wave.png": "/shopping-cart-ts/static/media/background-wave.4d168b80b6cbfdcb256b.png",
-    "index.html": "/shopping-cart-ts/index.html",
-    "static/media/github.svg": "/shopping-cart-ts/static/media/github.5b29e464be3b227e8083ed03e03940f5.svg",
-    "static/media/twitter.svg": "/shopping-cart-ts/static/media/twitter.042cd0b0af6349d52471c911da2c2bdb.svg",
-    "static/media/instagram.svg": "/shopping-cart-ts/static/media/instagram.4a3ffcb7282ddd43419d0746d8ee08e4.svg",
-    "static/media/frown.svg": "/shopping-cart-ts/static/media/frown.b52a09d64c4f01ff3706309b905d85b5.svg",
-    "static/media/bag.svg": "/shopping-cart-ts/static/media/bag.9cd4679bad325ae7e26cca407f976b3e.svg",
-    "static/media/facebook.svg": "/shopping-cart-ts/static/media/facebook.12622371eaa0d846943e74b0cca049f0.svg",
-    "main.624b3605.css.map": "/shopping-cart-ts/static/css/main.624b3605.css.map",
-    "main.6e648e7a.js.map": "/shopping-cart-ts/static/js/main.6e648e7a.js.map"
+    "main.css": "/fake-store/static/css/main.624b3605.css",
+    "main.js": "/fake-store/static/js/main.51b06623.js",
+    "static/media/main.png": "/fake-store/static/media/main.bd89f8b360e58987fee2.png",
+    "static/media/background-wave.png": "/fake-store/static/media/background-wave.4d168b80b6cbfdcb256b.png",
+    "index.html": "/fake-store/index.html",
+    "static/media/github.svg": "/fake-store/static/media/github.5b29e464be3b227e8083ed03e03940f5.svg",
+    "static/media/twitter.svg": "/fake-store/static/media/twitter.042cd0b0af6349d52471c911da2c2bdb.svg",
+    "static/media/instagram.svg": "/fake-store/static/media/instagram.4a3ffcb7282ddd43419d0746d8ee08e4.svg",
+    "static/media/frown.svg": "/fake-store/static/media/frown.b52a09d64c4f01ff3706309b905d85b5.svg",
+    "static/media/bag.svg": "/fake-store/static/media/bag.9cd4679bad325ae7e26cca407f976b3e.svg",
+    "static/media/facebook.svg": "/fake-store/static/media/facebook.12622371eaa0d846943e74b0cca049f0.svg",
+    "main.624b3605.css.map": "/fake-store/static/css/main.624b3605.css.map",
+    "main.51b06623.js.map": "/fake-store/static/js/main.51b06623.js.map"
   },
   "entrypoints": [
     "static/css/main.624b3605.css",
-    "static/js/main.6e648e7a.js"
+    "static/js/main.51b06623.js"
   ]
 }
